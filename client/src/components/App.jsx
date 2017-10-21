@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Clock from 'react-live-clock';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -12,8 +14,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h3>This is a React Boilerplate.</h3>
-        <h4>Feel free to add whatever you like :)</h4>
+        <Clock format={'h:mm'}/>
       </div>
     )
   }
