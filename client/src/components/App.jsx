@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 
 import Clock from 'react-live-clock';
 
+import AlarmIndicator from './AlarmIndicator';
+
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -13,8 +16,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <Clock format={'h:mm'}/>
+      <div className="container">
+        <Clock className="time" format={'h:mm A'} ticking={true} /> 
+        <AlarmIndicator />
       </div>
     )
   }
